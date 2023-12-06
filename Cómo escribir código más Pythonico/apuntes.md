@@ -57,3 +57,7 @@ mantener la sangría cuando se trate de la misma línea de código
 ## Dónde poner los cierres ?
 
 Las continuaciones de línea le permiten romper líneas dentro de paréntesis, corchetes o llaves
+
+# Comments
+
+"Si la implementación es díficil de explicar, entonces es una mala idea"
