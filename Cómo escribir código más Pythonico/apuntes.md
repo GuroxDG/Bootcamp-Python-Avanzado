@@ -13,7 +13,8 @@ total = (first_variable
 ```
 * Se debe dejar una línea en blanco al final de los archivos en Python
 
-# Naming Styles
+# Naming Conventions
+## Naming Styles
 
 |__Type__|__Naming Convention__|__Examples__|
 |----|------|---|
@@ -24,3 +25,8 @@ total = (first_variable
 |Constant|Use una palabra o palabras en mayúsculas, separe las palabras con guiones bajos|__CONSTANT__, __MY_CONSTANT__|
 |Module|Use una palabra o palabras cortas en minúsculas, separe las palabras con guiones bajos|__module__, __my_module__|
 |Package|Use una palabra o palabras cortas en minúsculas, No separe las palabras con guiones bajos|__package__|
+
+* La mejor manera de nombrar sus objetos en Python es __usar nombres descriptivos para dejar claro lo que representa el objeto__
+
+# Code Layout
+"Beautiful is better than ugly"
