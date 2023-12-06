@@ -30,3 +30,30 @@ total = (first_variable
 
 # Code Layout
 "Beautiful is better than ugly"
+
+## Blank Lines
+
+Los espacios en blanco verticales, o líneas en blanco, pueden mejorar en gran medida la legibilidad de su código.
+
+* Rodee las funciones y clases de nivel superior con dos líneas en blanco.
+* Rodee las definiciones de métodos dentro de las clases con una sola línea en blanco.
+* Use líneas en blanco con moderación dentro de las funciones para mostrar pasos claros
+
+## Maximun Line Length and Line Breaking
+
+PEP 8 sugiere que las líneas deben limitarse a 79 carácteres.
+
+# Identation
+
+"Debería haber una sola forma que sobre salgo sobre las demas"
+
+* Use 4 espacios consecutivos para indicar sangría
+* Prefiere los espacios a los tabs
+
+## Sangría despúes de los saltos de línea
+
+mantener la sangría cuando se trate de la misma línea de código
+
+## Dónde poner los cierres ?
+
+Las continuaciones de línea le permiten romper líneas dentro de paréntesis, corchetes o llaves
