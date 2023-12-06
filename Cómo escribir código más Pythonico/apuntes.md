@@ -69,3 +69,36 @@ Puntos clave para recordar al agregar comentarios a su código:
 * Limite la longitud de línea de los comentarios y la cadenas de documentación a 72 caracteres
 * Usar oraciones completas, comenzando con una letra mayúscula
 * Asegurate de actualizar los comentarios si cambias de código
+
+# Whitespace in Expressions and Statements
+
+"Sparse is better than dense"
+
+## Espacios en blanco alrededor de los operadores binarios
+
+Rodee los siguientes operadores binarios con un solo espacio a cada lado:
+
+* Operadores de asignación (=, +=, -=, etc...)
+* Comparaciones (==, !=, >, <, >=, <=) y (is, is not, in, not in)
+* Booleanos (and, not, or)
+
+## Cuándo evitar agregar espacios en blanco
+
+La siguiente lsita describe algunos casos en los que debe evitar agregar espacios en blanco:
+
+* Inmediatamente dentro del paréntesis, corchetes o llaves
+* Antes de una coma, punto y coma o dos puntos
+* Antes del paréntesis abierto que inicia la lista de argumentos de una llamada de función
+* Antes del paréntesis abierto que inicia un índice o segmento
+* Entre una coma final y un paréntesis de cierre
+* Para alinear operadores de asignación
+
+# Recomendaciones adicionales
+
+" Simple es mejor que complejo"
+
+* No compare valores booleanos ocno True o False usando el operador de equivalencia
+* Utilice el hecho de que las secuencias vacías osn falsas en declaraciones if
+* Use __is not__ preferiblemente sobre __not...is__ en declaraciones if
+* No use __if x:__ cuando quiere decir __if x is not None:__
+* Use __.startswith()__ y __.endswith()__ en lugar de usar recortar la palabra
