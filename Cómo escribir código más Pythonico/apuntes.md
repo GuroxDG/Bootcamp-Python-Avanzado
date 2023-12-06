@@ -12,3 +12,15 @@ total = (first_variable
         - third_variable)
 ```
 * Se debe dejar una línea en blanco al final de los archivos en Python
+
+# Naming Styles
+
+|__Type__|__Naming Convention__|__Examples__|
+|----|------|---|
+|Function|Use una palabra o palabras en minúsculas. separe las palabras con guiones bajos|__function__, __my_function__|
+|Variable|Use una sola letra, palabra o palabras en minúsculas, separe las palabras con guiones bajos| __x__, __var__, __my_variable__|
+|Class|Comienza cada palabra con una letra mayúscula, No use guiones use camel case o pascal case|__Model__, __MyClass__|
+|Method|Use una palabra o palabras en minúsculas, separe las palabras con guiones bajos|__class_method__, __method__|
+|Constant|Use una palabra o palabras en mayúsculas, separe las palabras con guiones bajos|__CONSTANT__, __MY_CONSTANT__|
+|Module|Use una palabra o palabras cortas en minúsculas, separe las palabras con guiones bajos|__module__, __my_module__|
+|Package|Use una palabra o palabras cortas en minúsculas, No separe las palabras con guiones bajos|__package__|
