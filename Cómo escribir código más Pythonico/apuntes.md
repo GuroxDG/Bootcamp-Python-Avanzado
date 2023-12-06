@@ -61,3 +61,11 @@ Las continuaciones de línea le permiten romper líneas dentro de paréntesis, c
 # Comments
 
 "Si la implementación es díficil de explicar, entonces es una mala idea"
+
+## Dónde poner la abrazadera de cierre?
+
+Puntos clave para recordar al agregar comentarios a su código:
+
+* Limite la longitud de línea de los comentarios y la cadenas de documentación a 72 caracteres
+* Usar oraciones completas, comenzando con una letra mayúscula
+* Asegurate de actualizar los comentarios si cambias de código
