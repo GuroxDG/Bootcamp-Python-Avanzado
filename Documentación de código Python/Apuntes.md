@@ -123,3 +123,10 @@ This is a reST style.
 """
 ```
 
+# Type Hints o anotations
+
+Son anotaciones para agregar tipos a variables, etc..., son solo sugerencias
+```
+<variable_name>: <variable_type> = <variable_value>
+```
+
