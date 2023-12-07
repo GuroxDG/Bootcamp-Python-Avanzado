@@ -72,3 +72,17 @@ Estos dos métodos hacen que los iteradores de Python funcionen, Por lo tanto, s
 # Generators
 Tipos especiales de iteradores que permiten crearlos como función
 * Generator Expressions ([])
+
+# Memoria eficiente
+
+Los iteradores y generadores son bastante eficientes en términos de memoria cuando los compara con funciones regulares. Con iteradores y gemeradores, no necesita almacenar todos los datos en la memoría de su computadoa al mismo tiempo
+
+# Iterables
+
+Los iteradores también son objetos iterables incluso si no contienen los datos.
+
+## Protocolo iterador
+| __Method__ | __Description__ |
+|--|----|
+|.____iter__()|Llamado para incializar el iterador. Debe devolver un objeto iterador|
+
