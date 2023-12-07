@@ -149,3 +149,40 @@ llamarlo de forma integrada en el archivo con la funcionalidaddes en la siguient
 |--o, --option|Especifica una o más banderas de doctest para usar mientras ejecuta sus pruebas|
 |--f, --fast-fast|Deja de ejecutar sus pruebas después del primer error|
 
+# Sphinx
+
+* Procesador de documentos especificamente escrito para la documentación de Python
+* Esta incluido en el modulo Docutils
+
+# Estrategias para documentar proyectos
+
+```
+project_root/
+
+    project/                        # Directorio del codigo fuente del proyecto
+        __init__.py
+        module.py
+        ...
+
+    docs/                           # Directorio de documentación
+        conf.py                     # Archivo de configuración de Sphinx
+        index.rst                   # Archivo principal de documentación
+        module1.rst                 # Archivo de documentación para module1
+        examples.py                 # Archivo de ejemplos de uso del proyecto
+        ...
+    
+    README                          # Archivo README principal
+    HOW_TO_CONTRIBUTE               # Archivo con instrucciones sobre como contribuir
+    CODE_OF_CONDUCT                 # Archivo con el código de conducta del producto
+    ...
+```
+
+|__Característica__|__Descripción__|
+|----|------|
+|Código bien documentado|Docstring, comentarios, unit test.|
+|Archivo README|Archivo que representa y explica un proyecto|
+|Guía de intalación| Instrucciones claras sobre como instalar el proyecto|
+|Ejemplo de uso con código de muestra|Proporciona ejemplos de código que muestren casos de uso comunes|
+|Documentación adicional|Sitio web del proyecto|
+|Contribuciones/Wiki|Pautas claras para contribuir|
+|Release notes/changelogs|Informar cambios del proyecto|
