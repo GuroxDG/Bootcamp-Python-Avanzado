@@ -26,3 +26,7 @@ if __name__ == "__main__":
 * import [nombre_módulo] as [alias_módulo]
 
 hay que evitar la recursión en la importación de modulos
+
+documentación:
+* https://docs.python.org/es/3/tutorial/modules.html
+* https://packaging.python.org/en/latest/tutorials/packaging-projects/
