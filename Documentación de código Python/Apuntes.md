@@ -130,3 +130,22 @@ Son anotaciones para agregar tipos a variables, etc..., son solo sugerencias
 <variable_name>: <variable_type> = <variable_value>
 ```
 
+# Doctest
+
+podemos testear nuestro código mediante comentarios, para poder testear nuestra función a partir del docstring, basta con utilizar el módulo __doctest__ de Python
+
+python -m doctest my_module.py -v
+
+llamarlo de forma integrada en el archivo con la funcionalidaddes en la siguiente tabla
+
+|__Función__|__Descripción__|
+|---|------|
+|testfile()|Ejecuta pruebas doctest desde un archivo de prueba|
+|testmod()|Ejecuta pruebas doctest desde un modulo de Python|
+
+|__Banderas__|__Descripción__|
+|---|------|
+|--h, --help|Muestra la ayuda de la linea de comandos para doctest|
+|--o, --option|Especifica una o más banderas de doctest para usar mientras ejecuta sus pruebas|
+|--f, --fast-fast|Deja de ejecutar sus pruebas después del primer error|
+
