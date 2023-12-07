@@ -68,3 +68,7 @@ Estos dos métodos hacen que los iteradores de Python funcionen, Por lo tanto, s
 |--|----|
 |.____iter__()|Llamado para incializar el iterador. Debe devolver un objeto iterador|
 |.____next__()|Llamado para iterar sobre el iterador. Debe devolver el siguiente valor en el flujo de datos|
+
+# Generators
+Tipos especiales de iteradores que permiten crearlos como función
+* Generator Expressions ([])
