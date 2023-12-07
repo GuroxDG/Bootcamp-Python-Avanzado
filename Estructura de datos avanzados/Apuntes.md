@@ -86,3 +86,13 @@ Los iteradores también son objetos iterables incluso si no contienen los datos.
 |--|----|
 |.____iter__()|Llamado para incializar el iterador. Debe devolver un objeto iterador|
 
+
+| __Feature__ | __Iterators__ | __Iterables__|
+|----|--|--|
+|Se puede usar en __for loop__ directamemte|[x]|[x]|
+|Se puede iterar muchas veces|[ ]|[x]|
+|Soporta la función __iter()__|[x]|[x]|
+|Soporta la función __next()__|[x]|[ ]|
+|Mantener información sobre el estado de la iteración|[x]|[ ]|
+|Optimixar el uso de la memoria|[x]|[ ]|
+
