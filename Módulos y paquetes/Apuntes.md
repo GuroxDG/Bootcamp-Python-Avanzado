@@ -30,6 +30,7 @@ if __name__ == "__main__":
 documentación:
 * https://docs.python.org/es/3/tutorial/modules.html
 * https://packaging.python.org/en/latest/tutorials/packaging-projects/
+* setuptools pype
 
 # Paquetes 
 
@@ -60,3 +61,4 @@ setup(name='Distutils',
 ```
 
 crear paquetes distribuibles para instalarlos al ambiente global de Python
+py setup.py sdist

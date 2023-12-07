@@ -1,6 +1,7 @@
 #from  calculos_arimeticos import sumar, restar
-from modulos_matematicos.calculos_arimeticos import *
-from modulos_matematicos.modulos_estadisticos.calculos_desvios import *
+#from modulos_matematicos.calculos_arimeticos import *
+#from modulos_matematicos.modulos_estadisticos.calculos_desvios import *
+from module_gustavo import * 
 
 if __name__ == '__main__':
     restar(2, 2)

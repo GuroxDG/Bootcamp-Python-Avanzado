@@ -1,0 +1,13 @@
+README.rst
+setup.py
+module_gustavo.egg-info/PKG-INFO
+module_gustavo.egg-info/SOURCES.txt
+module_gustavo.egg-info/dependency_links.txt
+module_gustavo.egg-info/requires.txt
+module_gustavo.egg-info/top_level.txt
+modulos_matematicos/__init__.py
+modulos_matematicos/calculos_arimeticos.py
+modulos_matematicos/modulos_estadisticos/__init__.py
+modulos_matematicos/modulos_estadisticos/calculos_desvios.py
+modulos_matematicos/modulos_estadisticos/calculos_visualizacion.py
+modulos_matematicos/modulos_estadisticos/promedios.py
