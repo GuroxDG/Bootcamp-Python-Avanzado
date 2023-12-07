@@ -52,3 +52,19 @@ Características
 * Un conjunto en si puede modificarse, pero los elementos contenidos en el conjunto deben ser de tipo inmutable
 * {} or set([])
 
+# Iteradores e iterables
+
+Los iteradores potencian y controlan el proceso de iteración, mientra que los iterables normalmente contienen datos que desean iterar sonre un valor a la vez
+
+
+## Iteradores
+Los iteradores de Python, implementan el pratron de diseño Iterador, que le permite recorrer una colección y acceder a sus elementos
+
+
+## Protocolo Iterador
+Estos dos métodos hacen que los iteradores de Python funcionen, Por lo tanto, si desea crear clases iteradoras personalizadas, debe implementar los siguientes métodos:
+
+| __Method__ | __Description__ |
+|--|----|
+|.____iter__()|Llamado para incializar el iterador. Debe devolver un objeto iterador|
+|.____next__()|Llamado para iterar sobre el iterador. Debe devolver el siguiente valor en el flujo de datos|
