@@ -102,3 +102,16 @@ La siguiente lsita describe algunos casos en los que debe evitar agregar espacio
 * Use __is not__ preferiblemente sobre __not...is__ en declaraciones if
 * No use __if x:__ cuando quiere decir __if x is not None:__
 * Use __.startswith()__ y __.endswith()__ en lugar de usar recortar la palabra
+
+# Linters
+
+Son programas que analizan el código y marcan los errores. Proporcionan sugerencias sobre como corregir el error.
+
+Algunos linters comunes son:
+* Pylint
+* Flake8 
+
+usar flake8 [python file], flake analiza menos qie Pylint
+
+# Pre-Commits
+Es una función o script que se ejecuta ante de confirmar (commit) los cambios en un sistema de control de versiones, como git.

@@ -18,8 +18,11 @@ TOTAL = 30
 
 # FUNCTIONS
 # Not recommended
+
+
 def db(x):
     return x * 2
+
 
 # Recommended
 def multiply_by_two(x):
