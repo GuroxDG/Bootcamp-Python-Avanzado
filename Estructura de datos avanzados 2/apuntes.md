@@ -7,4 +7,7 @@ Permiten organizar y acceder a elementes específicos, Una pila o stack es una e
 Una cola o queue es una estructua de datos en la que el primer elemento en entrar es eñ primero en salir FIFO: First In First Out
 
 # Collections 
-Es un modulo que nos ofrece Python para implementar colas de una manera más eficiente mediante deque
+Es un modulo que nos ofrece Python para implementar colas de una manera más eficiente mediante __deque__
+
+# Listas enlazadas
+Cadenas de objetos enlazadas mediante referencias.
