@@ -89,3 +89,19 @@ print_message('Some random message')
 * Un decorador puede agregar la funcionalidad que uno requiera
 * El orden de ejecución en una función con dos decoradores depende del nivel de cercanial de @decorador
 * Los decoradores son un patron de diseño
+* se guarda decoradores en un archiv o decoradores.py
+
+# Args y Kwargs
+
+* *args: es usado para recibir múltioles argumentos por posición.
+* **kwargs: es usado para recibir múltioles argumentos por medio de una llave o key.
+
+```
+def test_args_and_kwars(*args, **kwargs):
+    print('args')
+    for arg in args:
+        print(f'arguments of arg: {arg}')
+    print('kwargs')        
+    for key, value in kwargs:
+        print(f'{key} = {value}')
+```
