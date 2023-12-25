@@ -106,5 +106,17 @@ def test_args_and_kwars(*args, **kwargs):
         print(f'{key} = {value}')
 ```
 
-* links : http://www.freecodecamp.org/espanol/news/los-principios-solid-explicados-en-espanol
+* links : https://www.freecodecamp.org/espanol/news/los-principios-solid-explicados-en-espanol
 * pdb Python debugger
+
+# Resumen
+
+Los decoradores alteran dinámicamente una función, metódo o clase sin tener que cambiar de estas para ser decoradas. Usar decoradores en Python ayuda a que tu código sea DRY(Don't Repeat Yourself). Algunos casos de uso son:
+* Autorización  en frameworks como Flask y Django
+* Logging
+* Medición de ejecución de tiempo
+* Sincronización
+
+
+* links : https://tutorial.djangogirls.org/es/
+
