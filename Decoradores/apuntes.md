@@ -105,3 +105,6 @@ def test_args_and_kwars(*args, **kwargs):
     for key, value in kwargs:
         print(f'{key} = {value}')
 ```
+
+* links : http://www.freecodecamp.org/espanol/news/los-principios-solid-explicados-en-espanol
+* pdb Python debugger
