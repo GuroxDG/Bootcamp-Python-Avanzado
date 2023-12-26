@@ -1,5 +1,7 @@
 """ Project to run decorators """
+from decorators import authenticate_class
 
+@authenticate_class
 class MyClass:
     """ Main class"""
 
@@ -17,7 +19,7 @@ class MyClass:
 
 
 
-my_class = MyClass('carogomez', 'testpwd123.')
+my_class = MyClass('gustavo', '123')
 print(my_class.username)
 print(my_class.password)
 my_class.say_hello()
