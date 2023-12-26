@@ -1,7 +1,7 @@
 """ decorators functions """
 import functools
 
-from utils import *
+from utils import authenticate, is_valid_password
 
 def authenticate_class(cls):
     """ Authenticate users """

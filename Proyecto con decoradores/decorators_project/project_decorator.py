@@ -1,5 +1,5 @@
 """ Project to run decorators """
-from decorators import *
+from decorators import authenticate_class, validate_password
 
 @authenticate_class
 class MyClass:
