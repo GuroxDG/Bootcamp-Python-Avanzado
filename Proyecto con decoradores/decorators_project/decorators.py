@@ -1,7 +1,7 @@
 """ decorators functions """
 import functools
 
-from utils import authenticate
+from utils import *
 
 def authenticate_class(cls):
     """ Authenticate users """
@@ -15,3 +15,15 @@ def authenticate_class(cls):
         
     return wrapper
         
+def validate_password(func):
+    """ Validate password """
+
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        pwd = args[0].password
+        if is_valid_password(pwd):
+            return func(*args, **kwargs)
+        else:
+            raise Exception('Invalid Password')
+        
+    return wrapper        
