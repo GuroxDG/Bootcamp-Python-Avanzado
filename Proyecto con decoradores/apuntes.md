@@ -59,7 +59,7 @@ Es un patron de diseño estructural que te permite añadir funcinalidades a obje
 
 Ejemplos de un proyecto con decoradores usando clases en Python:
 
-* Logging: Un decorador puede ser usado para añdir funcionalidad a un clase. Esto puede ser util para trazar la ejecución de unos métodos de clase.
-* Autenticación: Un decorador puede ser usado para añadir funcionalidad de autenticación a una clase. Esto puede ser usasdo para restringir el acceso a métodos de clase a usuarios autorizados.
-* Caching: Un decorador puede ser usado para añadir funcionalidad de cacheo a una clase. Esto puede ser usado para mejorar el performance de una clase almacenando los resultados de operaciones computacionales costosas en memoria.
-* Rate limiting: Un decorador puede ser usado para añadir funcionalidad de rate limiting a una clase. Esto puede ser usado para prevenir que una clase sea sobrecargada con request
+* __Logging:__ Un decorador puede ser usado para añdir funcionalidad a un clase. Esto puede ser util para trazar la ejecución de unos métodos de clase.
+* __Autenticación:__ Un decorador puede ser usado para añadir funcionalidad de autenticación a una clase. Esto puede ser usasdo para restringir el acceso a métodos de clase a usuarios autorizados.
+* __Caching:__ Un decorador puede ser usado para añadir funcionalidad de cacheo a una clase. Esto puede ser usado para mejorar el performance de una clase almacenando los resultados de operaciones computacionales costosas en memoria.
+* __Rate limiting__: Un decorador puede ser usado para añadir funcionalidad de rate limiting a una clase. Esto puede ser usado para prevenir que una clase sea sobrecargada con request
