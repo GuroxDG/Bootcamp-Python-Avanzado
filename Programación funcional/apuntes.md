@@ -38,3 +38,11 @@ counter = len(list(filter(lambda num: num > 10, numbers)))
 print(counter)
 # 5
 ```
+
+# Programación Funcional
+La programación funcional es un paradigma de programación declarativo que se basa en el uso de funciones puras y evita el estado mutable y los efectos secundarios. Se centra en la evalución de expresiones y la composición de funciones para resolver problemas
+
+El código funcional es:
+* __Alto nivel__: está describiendo el resultado que desea en lugar de especificar explícitamente los pasos necesarios para llegar allí.
+* __Transparente__: El comportamiento de una función pura depende únicamente de sus entradas y salidas, sin valores intermedios.
+* __Paralelizable__: Las rutinas que no causan efectos secundarios pueden ejecutarse más fácilmente en paralelo entre sí.
