@@ -172,3 +172,153 @@ returned_function()
 print(returned_function)
 # <function outer.<local>.inner >
 ```
+
+# Función de orden superior
+
+Se denomina de orden superior si esta contiene otras funciones como parámetros de entrada o si devuelve una función como salida, es decir, las funciones que operan con otra función se conocen como funciones de orden superior en Python.
+
+```
+def inner():
+    print('I am a function called by a high order')
+
+def high_order_function(function_param):
+    function_param()
+
+high_order_function(inner)
+```
+
+## Filter como función de orden superior
+
+```
+def get_even(x):
+    return x%2 == 0
+
+integer = range(100)
+even = list(filter(get_even, integer))
+print(even)
+# [0, 2, 4, 8, ..., 98]
+```
+
+# Funciones recursivas
+
+Una función recursiva es una función que se define en términos de sí misma a través de una expresión autorreferencial. Eso significa que la función se llama a sí misma y repite el comportamiento hasta que se cumple alguna condición, y luego devolverá un resultado.
+
+Básicamente la recursividad permite diseñar algoritmos que de forma iterativa generarían más código y serían menos legibles.
+
+```
+def countdown(n):
+    print(n)
+    if n > 0:
+        countdown(n-1)
+
+countdown(5)
+# 5
+# 4
+# 3
+# 2
+# 1
+# 0
+```
+
+# Funciones lambda
+
+Las funciones lambda son funciones anónimas que solo pueden contener una expresión
+
+__lambda <parameter_list>:<_expression_>__
+
+Component | Meaning
+---|----
+_lambda_ | Palabra clave para definir una expresión lambda
+_<parameter_list>_ | Una lista de nombres de parámetros opcionales
+_:_ | Puntuación para separar los parámetros de la expresión
+_<_expression_>_ | Una expresión que normalmente incluye los parámetros
+
+```
+def get_even(x):
+    return x%2 == 0
+
+get_even
+# <function get_even at ...>
+
+lambda x : x%2 == 0
+# <function <lambda> at ...>
+```
+
+Una función lambda es callable (llamable o invocable)
+
+```
+callable(lambda s: s[::-1])
+# True
+```
+
+Una función lambda es asignable a variables
+```
+def reverse(s):
+    return s[::-1]
+
+reverse('I am a string')
+# gnirts a ma I
+
+lambda_reverse = lamda s : s[::-1]
+lambda_reverse('I am also a string')
+# gnirts a osla ma I
+```
+
+Una función lambda puede se llamada inmediatamente (IIFE)
+```
+(lamda s: s[::-1])('I am a string')
+# gnirts a ma I
+```
+
+Una función lambda puede recibir multiples parámetros
+```
+lambda_average = lambda x1, x2, x3: (x1 + x2 + x3) / 3
+lambda_average(3, 6, 9)
+# 6.0
+```
+
+Una función lambda puede no recibir parámetros
+```
+meaning_of_life = lambda: 42
+meaning_of_life()
+# 42
+```
+
+Una función lambda pueden retornar múltiples resultados en una tupla pero solo de forma explicita
+```
+def my_function(x):
+    return x, x ** 2, x ** 3
+
+my_function(3)
+# (3, 9, 27)
+```
+
+Error al no denifir la tupla función
+```
+(lambda x: x, x ** 2, x ** 3)(3)
+# Traceback (most recent call last):
+# NameError: name 'x' is not defined
+
+(lambda x: (x, x ** 2, x ** 3))(3)
+# (3, 9, 27)
+```
+
+Una función lambda puede retornar una lista o un diccionario
+```
+(lamda x: [x, x ** 2, x *** 3])(3)
+
+(lamda x: {1:x, 2:x ** 2, 3:x *** 3})(3)
+```
+
+Una función lambda puede ser creada dentro de un f-string pero debe ser encerrada dentro de paréntesis
+
+```
+print(f"--- {lambda s: s[::-1]} ---")
+# SyntaxError: f-string invalid syntax
+
+print(f"--- {(lambda s: s[::-1])} ---")
+# --- <function <lambda> at ...>
+
+print(f"--- {(lambda s: s[::-1])('I am a string')} ---")
+# --- gnirts a ma I ---
+```
