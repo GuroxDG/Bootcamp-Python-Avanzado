@@ -146,3 +146,29 @@ print(dictionary[my_function])
 # 2
 ```
 
+Pasados como argumento a funciones
+```
+def inner():
+    print('I am function inner()')
+
+def outer(function_param):
+    function_param()
+
+outer(inner)
+# I am function inner()
+```
+
+Devueltos como resultado de funciones
+```
+def outer():
+    def inner():
+        print('I am function inner()')
+    return inner
+
+returned_function = outer()
+returned_function()
+#'I am function inner()'
+
+print(returned_function)
+# <function outer.<local>.inner >
+```
