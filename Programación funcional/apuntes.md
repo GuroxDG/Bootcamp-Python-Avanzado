@@ -322,3 +322,85 @@ print(f"--- {(lambda s: s[::-1])} ---")
 print(f"--- {(lambda s: s[::-1])('I am a string')} ---")
 # --- gnirts a ma I ---
 ```
+
+# Función Map y Filters
+
+## Función Map()
+Es una función integrada de Python. Con map(), se puede aplicar una función a cada elemento en un iterable a la vez, y map() devolverá un iterador que arroja los resultados
+
+__map(<_f_>,<_iterable_>)__
+
+```
+def reverse(s):
+    return s[::-1]
+
+reverse('I am a string')
+# gnirts a ma I
+
+animals = ['cat', 'dog', 'bird', 'gecko']
+iterator = map(reverse, animals)
+print(iterator)
+# <map object at ...>
+
+for i in iterator:
+    print(i)
+
+# tac
+# god
+# drib
+# okceg
+
+```
+
+Si el iterable contiene elementos que no son adecuados para la función especificada, Python genera una función
+
+```
+list(map( lambda s: s[::-1],['cat', 'dog', 3.14159, 'gecko']))
+# TypeError
+
+'+'.join([1, 2, 3, 4, 5])
+# TypeError
+
+'+'.join(map(str, [1, 2, 3, 4, 5]))
+# '1+2+3+4+5'
+```
+
+Al poder aplicarse a cualquier iterador puede ser utilizado en strings
+```
+hello_world = 'hello world'
+iterator = map(lambda x: x.upper(), hello_world)
+print(''.join(iterator))
+# HELLO WORLD
+
+print(hello_world)
+# hello world
+```
+
+### Llamando map() con múltiples iterables
+
+```
+def f(a, b, c):
+    return a + b + c
+
+list(map(f, [1, 2, 3], [10, 20, 30], [100, 200, 300]))
+# [111, 222, 333]
+```
+
+## Función Filter()
+filter() te permite seleccionar o filtrar elementos de un iterable en función de una condición dada.
+
+__filter(<_f_>,<_iterable_>)__
+
+```
+def greater_than_100(x):
+    return x > 100
+
+list(filter(greater_than_100, [1, 111, 2, 222, 3, 333]))
+# [111, 222, 333]
+```
+
+se puede crear la misma expresión con una función lambda
+```
+list(filter(lambda x: x>100, [1, 111, 2, 222, 3, 333]))
+# [111, 222, 333]
+```
