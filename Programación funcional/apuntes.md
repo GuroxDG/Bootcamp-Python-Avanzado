@@ -46,3 +46,55 @@ El código funcional es:
 * __Alto nivel__: está describiendo el resultado que desea en lugar de especificar explícitamente los pasos necesarios para llegar allí.
 * __Transparente__: El comportamiento de una función pura depende únicamente de sus entradas y salidas, sin valores intermedios.
 * __Paralelizable__: Las rutinas que no causan efectos secundarios pueden ejecutarse más fácilmente en paralelo entre sí.
+
+# Python como lenguaje funcional
+Python es un lenguaje de programación que admite múltiples paradigmas, lo que lo hace muy flexible y versátil.
+
+Python tiene características de programación funcional ya que permite el uso de funciones de primera clase, funciones de orden superior, expresiones lambda y operaciones de lista (como map, filter y reduce) para realizar operaciones funcionales.
+
+## Funciones Puras
+* Devuelven el mismo resultado al ser llamadas con los mismos argumentos de entrada.
+* El resultado solo depende de la entrada: no tienen memoria.
+* No tiene efectos colaterales (side effects)
+
+Dada una entrada siempre se espera la misma salida sin afectar valires externos o requerir de otras variables
+
+```
+def multiply_by_2(x):
+    return x * 2
+
+multiply_by_2(3) # 6
+multiply_by_2(3) # 6
+multiply_by_2(3) # 6
+```
+## Función Impura
+
+Dado una entrada no se puede determinar la salida
+
+```
+from random import randint
+
+def multiply(x):
+    return x * randint(1, 10)
+
+multiply(3) # 3
+multiply(3) # 15
+multiply(3) # 27
+```
+
+Su resultado depende de variables externas
+
+```
+external_variable = ["Hola", "Mundo"]
+
+def custom_join():
+    new_string = ""
+    for word in external_variable:
+        new_string += word
+    return new_string
+
+custom_join()
+# Holamundo
+```
+
+Su ejecución genera efectos secundarios modificando el estado de otras variables
