@@ -404,3 +404,16 @@ se puede crear la misma expresión con una función lambda
 list(filter(lambda x: x>100, [1, 111, 2, 222, 3, 333]))
 # [111, 222, 333]
 ```
+
+Ya que la función Range genera un iterable de números de 0 a n-1 también puede ser pasado a la función Filter
+
+```
+def is_even(x):
+    return x % 2 == 0
+
+list(filter(is_even, range(10)))
+# [0, 2, 4, 6, 8]
+
+list(filter(lambda x: x%2 == 0, range(10)))
+# [0, 2, 4, 6, 8]
+```
