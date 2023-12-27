@@ -98,3 +98,51 @@ custom_join()
 ```
 
 Su ejecución genera efectos secundarios modificando el estado de otras variables
+
+
+```
+external_variable = ["Hola", "Mundo"]
+
+def remove_last_value():
+    external_variable.pop()
+
+print(external_variable)
+# ['Hola', 'mundo']
+
+remove_last_value()
+
+print(external_variable)
+# ['Hola']
+```
+
+# Funciones como ciudadanos de primer orden
+Se refieren a elementos en un lenguaje de programación que pueden ser tratados de manera completa y sin restricciones
+
+Estos elementos pueden ser asignados a variables, almacenados en estructuras de datos, pasados como argumentos a funciones y devueltos como resultados de funciones
+
+```
+def my_function():
+    print('I am function my_function()')    
+```
+
+Ser asignados a variables
+```
+my_function()
+# I am function my_function()
+
+another_name =  my_function
+another_name()
+# I am function my_function()
+```
+
+Almacenados en estructuras de datos
+```
+objects = ['cat', my_function, 42]
+print(objects[1])
+# <function>
+
+dictionary = { 'cat': 1, my_function : 2, 42 : 3 }
+print(dictionary[my_function])
+# 2
+```
+
