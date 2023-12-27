@@ -1,0 +1,6 @@
+# Temas
+
+* Functools
+* Itertools
+* toolz
+
