@@ -34,3 +34,15 @@ class ChildClass(FatherClass):
     pass
 ```
 
+En python es posible realizar hrencia múltiple. La herencia múltiple consiste en que una clase herreda de varias clases padre en vez de una sola al mismo tiempo.
+Exite un orden de herencia de izquierda a derecha.
+
+```
+class Class1:
+    pass
+class Class2:
+    pass
+class Class3(Class1, Class2):
+    pass
+```
+
