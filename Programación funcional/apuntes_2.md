@@ -21,3 +21,21 @@ El módulo Functools es para funciones de orden superior: funciones que actuan o
 
 
 * link : https://docs.python.org/es/3/library/functools.html
+
+* __@cache__: guarda el valor de la función en relación al parámetro que recibe
+* __@lru_cache__: guarda el valor de la función en relación al parámetro que recibe, y permite definir la cantidad de valores guardado
+* __partial__: crea una subfunción, dejando estático un parámetro de la función original
+* __reduce__: Es como accumulate de la librería itertools
+
+
+# Toolz
+
+Este paquete proporciona un conjunto de funciones de utilidad para iteradores, funciones y diccionarios. Estas funciones amplian las bibliotecas estándar itertools y functools y toman mucho de las bibliotecas estándar de los lenguajes funcionales contemporaneos. Los módulos que implementa son:
+
+* itertoolz
+* functoolz
+* dicttoolz
+* sandbox
+* recipes
+
+* link : https://toolz.readthedocs.io/en/latest/api.html
