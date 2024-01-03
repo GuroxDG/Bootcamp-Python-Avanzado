@@ -46,3 +46,5 @@ class Class3(Class1, Class2):
     pass
 ```
 
+# Polimorfismo
+
