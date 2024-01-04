@@ -106,3 +106,13 @@ class RemoteControl(metaclass=ABCMeta):
 
 En la abstracción debemos decir cuales métodos son abstractos, todos los métodos abstractos tienen que definidos el los objetos que heredan del abstract
 
+
+# Tema 2
+
+* Magic Methods
+* Miembros públicos, protegidos y privados
+* Name Mangling
+* Properties
+* Metodos de instancia, clase y estáticos
+* Data Classes
+
