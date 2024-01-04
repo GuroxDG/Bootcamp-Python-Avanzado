@@ -48,3 +48,59 @@ class Class3(Class1, Class2):
 
 # Polimorfismo
 
+El término tiene origen en las palabras poly(muchos) y morfo(formas), y aplicado a la programación hace referencia a que los objetos pueden tomar diferentes formas
+
+```
+class Animal:
+    def speak(self):
+        pass
+
+class Dog(Animal):
+    def speak(self):
+        print("Guau!")
+
+class Cat(Animal):
+    def speak(self):
+        print("Miau!")
+```
+
+# Encapsulamiento
+
+Consiste en hacer que los atributos o métodos internos a una clase no se puedan acceder ni modificar desde fuera, sino que tan solo el propio objeto pueda acceder a ellos.
+
+```
+class Base:
+    class_attribute = "Hi"
+    __hidden_class_attribute = "Pribate Hi"
+
+    # No accesible desde el exterior
+    def __private_method(self):
+        print("Do Somethig")
+        self.__variable = 0
+
+    # Accesible desde el exterior
+    def public_method(self):
+        self.__private_method()
+```
+link: https://realpython.com/inheritance-composition-python/
+
+# Abstracción
+
+Es un término que hace referencia a la ocultación de la complejidad intrínsica de una aplicación al exterior,  centrándose sólo en cómo puede ser usada, lo que se conoce como interfaz.
+
+Un concepto relacionado con la abtracción, serían las clases abtractas o más bien los métodos abtractos, y se define como método abtracto a un método que ha sido declarado pero no implementado, Es decir, que no tiene código.
+
+En python usamos el módulo ABC (Abstrac Base Classes) para implementar interfaces formales
+
+```
+from abc import ABC
+
+class RemoteControl(ABC):
+    pass
+
+from abc import ABCMeta
+
+class RemoteControl(metaclass=ABCMeta):
+    pass
+```
+
