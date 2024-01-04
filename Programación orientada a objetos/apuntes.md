@@ -104,3 +104,5 @@ class RemoteControl(metaclass=ABCMeta):
     pass
 ```
 
+En la abstracción debemos decir cuales métodos son abstractos, todos los métodos abstractos tienen que definidos el los objetos que heredan del abstract
+
