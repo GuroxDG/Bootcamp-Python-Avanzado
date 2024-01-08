@@ -29,3 +29,8 @@ Las excepciones heredan de  __BaseException__
 
 * En Python, al ocurrir un error en tiempo de ejecución se dispara una excepción, lo que finaliza el programa de forma abrupta.
 * Las excepciones las manejaremos con los bloques: try - except
+
+# Traceback
+
+* En Python, el Traceback (rastro de ejecución) es una lista de llamadas y excepciones que se muestra cuando ocurre un error.
+* Proporciona información detallada sobre la secuencia de eventos que condujo al error
