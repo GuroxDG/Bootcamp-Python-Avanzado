@@ -73,4 +73,54 @@ Las pruebas de interfaz de usuario pueden incluir pruebas manuales o automátiza
 
 
 # Desarrollo guiado por Pruebas
+TDD es una mtodología de desarrollo donde primero se escriben la pruebas y estas guían el desarrollo del código.
 
+1. Escriben las pruebas que fallan 
+2. Escribes el código para que las purebas pasen
+3. Refactorizar
+
+# Pytest
+Pytest es un framework de pruebas para Python que facilitan la escritura y ejecución de casos de prueba.
+
+Con una sintaxis sencilla y expresiva, pytest permite definir pruebas de manera concisa y clara. Ofrece una amplia gama de funcionalidades, como la Detección automática de pruebas, el uso de fixtures para configurar el entorno de prueba, la generación de informes detallados y la integración con otras herramientas de prueba
+
+
+## Fixture
+
+En pytest, los fixtures son funciones que se utilizan para proporcionar un contexto predefinido y datos de pruebas a las pruebas
+
+Los fixtures se definen utilizando el decorador @pytest.fixture y se pueden usar en funciones de prueba mediante su nombre como argumento.
+
+```
+import pytest
+
+@pytest.fixture
+def setup_data():
+    # Configuración del entorno necesario
+    data = [1, 2, 3, 4, 5]
+    return data
+
+def test_suma(setup_data):
+    asset sum(setup_data) == 15
+```
+
+## Parametrize
+
+El decorador @pytest.parametrize es un característica de pytest que permite realizar pruebas parametrizadas. Permite ejecutar una misma función de prueba con diferentes conjuntos de datos o argumentos de prueba
+
+```
+import pytest
+
+def suma(a, b):
+    return a + b
+
+@pytest.mark.parametrize("a, b, resultado", [
+    [2, 3, 5],
+    [-1, 1, 0],
+    [10, -5, 5],
+])
+
+def test_suma(a, b, resultado):
+    assert suma(a,b) == resultado
+    
+```
