@@ -24,3 +24,8 @@
 Mecanismo que se activa con forme a un error en tiempo de ejecución.
 
 Las excepciones heredan de  __BaseException__
+
+## Más vale pedir perdón que pedir permiso.
+
+* En Python, al ocurrir un error en tiempo de ejecución se dispara una excepción, lo que finaliza el programa de forma abrupta.
+* Las excepciones las manejaremos con los bloques: try - except
