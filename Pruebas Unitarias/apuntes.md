@@ -72,3 +72,5 @@ Las pruebas de interfaz de usuario pueden incluir pruebas manuales o automátiza
 2. __Pyppeteer/Playwright:__ Herramientas que ofrecen control automátizado de navegadores web basados en Chromium(Pyppeteer) o multi-navegador(Playwright) para realizar pruebas de interfaz de usuario.
 
 
+# Desarrollo guiado por Pruebas
+
