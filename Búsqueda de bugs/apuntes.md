@@ -23,4 +23,4 @@
 # Excepción
 Mecanismo que se activa con forme a un error en tiempo de ejecución.
 
-
+Las excepciones heredan de  __BaseException__
