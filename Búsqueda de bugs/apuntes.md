@@ -35,3 +35,14 @@ Las excepciones heredan de  __BaseException__
 * En Python, el Traceback (rastro de ejecución) es una lista de llamadas y excepciones que se muestra cuando ocurre un error.
 * Proporciona información detallada sobre la secuencia de eventos que condujo al error
 * Es posible extraer el traceback aunque python lo omita con el exception
+
+# Módulo Logging
+
+__Deja de usar prints__
+```
+def my_super_function(*args):
+    print(">>>> Entramos a al función")
+    ...
+    print(">>>> Salimos de la función")
+    return True
+```
