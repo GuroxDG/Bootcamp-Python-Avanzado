@@ -46,3 +46,42 @@ def my_super_function(*args):
     print(">>>> Salimos de la función")
     return True
 ```
+
+logging trabaja con 6 niveles de categorías
+
+```
+import logging
+
+logging.debug("Este es un mensaje debug")
+logging.info("Este es un mensaje de información")
+logging.warning("Este es un mensaje de advertencia")
+logging.error("Este es un mensaje de error")
+logging.critical("Este es un mensaje critico")
+```
+por defecto en python se imprime todo lo qu eeste por encima del nivel 30 (30, 40, 50)
+
+## Configuración de logging
+
+```
+logging.basicConfig(
+    filename="basic.log",
+    encoding="utf-8",
+    level=logging.INFO,
+    filemode = "W",
+    format = "%(process)d-%(levelname)s-%(message)s"
+)
+```
+
+## Formato de mensajes
+
+* $(asctime)s: La hora en la se registra el mensaje
+* $(levelname)s: El nivel de registra del mensaje
+* $(message)s: El contenido del mensaje
+* $(name)s: El nombre del logger utilizado
+* $(filename)s: El nombre del archivo donde se realiza el registro
+* $(module)s: El nombre del modulo donde se realiza el registro
+* $(funcName)s: El nombre de la función donde se realiza el registro
+* $(lineno)d: El número de la línea donde se realiza el registro
+
+# Módulo pdb
+
