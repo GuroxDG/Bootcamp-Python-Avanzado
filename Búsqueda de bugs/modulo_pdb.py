@@ -1,16 +1,17 @@
 import pdb
+from typing import List
 
-def average(numbers):
-    sum = 0
+def average(numbers: List[int]) -> int:
+    sum: int = 0
 
     for number in numbers:
         sum += number
 
     return round(sum / len(numbers))
 
-def set_score(scores):
+def set_score(scores: List[int]) -> None:
     breakpoint()
-    average_ = average(scores)
+    average_: int = average(scores)
     print(average_)
     match average_:
 
@@ -28,4 +29,5 @@ def set_score(scores):
 
 
 if __name__ == "__main__":
-    set_score([6, 7, 8, 6, 8, 10])
+    numbers: List[int] = [6, 7, 8, 6, 8, 10]
+    set_score(numbers)
