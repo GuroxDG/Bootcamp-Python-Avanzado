@@ -95,3 +95,6 @@ logging.basicConfig(
 * __p <variable>:__ Muestra el valor de una variable
 * __q o quit:__ Sale del modo de depuración y finaliza el programa:
 
+# Type Hints
+
+Tiene como objetivo mostrar de forma más clara el código, a las variables se les asigna el tipo
