@@ -85,3 +85,13 @@ logging.basicConfig(
 
 # Módulo pdb
 
+>>> import pdb
+>>> breakpoint()
+
+* __n o next:__ Ejecuta la siguiente línea de código
+* __s o step:__ Entra en la siguiente función llamada
+* __c o continue:__ Continúa la ejecución hasta el próximo punto de interrupción
+* __l o list:__ Muestra el fragmento de código actualmente en ejecución
+* __p <variable>:__ Muestra el valor de una variable
+* __q o quit:__ Sale del modo de depuración y finaliza el programa:
+
